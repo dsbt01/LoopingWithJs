@@ -4,8 +4,6 @@ var chunk_two = [ 'Lucas' , 'Jake','Scott','Amy', 'Molly','Hannah','Lucas'];
 const mergeArrays = (firstArray, secondArray) => {
     let newArray = []
     //your code here
-    newArray.push(...firstArray);
-    newArray.push(...secondArray);
     return newArray
 }
 

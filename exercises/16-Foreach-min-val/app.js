@@ -11,4 +11,10 @@ function FindMinValue(anArr)
             currentMinValue = item;
         }
     });
+
+    
 }
+
+FindMinValue(myArray);
+
+console.log(currentMinValue);

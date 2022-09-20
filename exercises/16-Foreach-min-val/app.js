@@ -6,6 +6,9 @@ function FindMinValue(anArr)
 {
     myArray.forEach(function(item,index)
     {
-
+        if (item < currentMinValue)
+        {
+            currentMinValue = item;
+        }
     });
 }

@@ -6,8 +6,14 @@ let people = [
 	{ name: 'Steve', birthDate: new Date(2003,4,24) }
 ];
 
+function _calculateAge(birthday) { // birthday is a date
+    var ageDifMs = Date.now() - birthday.getTime();
+    var ageDate = new Date(ageDifMs); // miliseconds from epoch
+    return Math.abs(ageDate.getUTCFullYear() - 1970);
+}
+
 let simplifier = function(person){
-	return person.name;
+	return `Hello, my name is ${person.name} and I am ${_calculateAge(person.birthDate)} years old`;
 };
 
 console.log(people.map(simplifier));

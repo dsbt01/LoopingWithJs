@@ -2,7 +2,7 @@
 
 var myNumbers = [23,234,345,4356234,243,43,56,2];
 
-myFunction = function (number) {
+let myFunction = function (number) {
     return number * 3; 
 }
 
